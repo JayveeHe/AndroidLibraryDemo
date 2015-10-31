@@ -1,11 +1,11 @@
 # AndroidLibraryDemo
 
-##this project demonstrate how to use android Library and publish it into maven control center.
+###this project demonstrate how to use android Library and publish it into maven control center.
 
-#1.create a library and use it in your own project
+###1.create a library and use it in your own project
 
-##1.1create a new android project
-##1.2create a new library module
+####1.1create a new android project
+####1.2create a new library module
 file->new->new module...->android library->..finish
 
 in android studio, project is composed with modules.
@@ -24,14 +24,14 @@ dependencies {
 }
 ```
 
-#2.publish your library
+###2.publish your library
 you can publish your library into maven control. you can use official maven repository or jcenter, but
 it is complicated.
 in this project we use github as our maven repository.
 
-##2.1 register a account in [jitpack](https://jitpack.io/)
+####2.1 register a account in [jitpack](https://jitpack.io/)
 recommend you use your github account to login
-##2.2 edit build.gradle
+####2.2 edit build.gradle
 - in your root `build.gradle`
 ```java
 buildscript {
@@ -51,10 +51,10 @@ add following lines:
 ```java
 apply plugin: 'com.github.dcendents.android-maven'
 ```
-##2.3 share your project on github
+####2.3 share your project on github
 remember to upload gradle/wrapper folder to repo
-##2.4 add release version control 
-##2.5 generate maven reference
+####2.4 add release version control 
+####2.5 generate maven reference
 input your github repo site into  https://jitpack.io/
 
 you can see the version and commit reference script
