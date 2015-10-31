@@ -2,10 +2,10 @@
 
 ###this project demonstrate how to use android Library and publish it into maven control center.
 
-###1.create a library and use it in your own project
+###1. create a library and use it in your own project
 
-####1.1create a new android project
-####1.2create a new library module
+####1.1 create a new android project
+####1.2 create a new library module
 file->new->new module...->android library->..finish
 
 in android studio, project is composed with modules.
@@ -24,7 +24,7 @@ dependencies {
 }
 ```
 
-###2.publish your library
+###2. publish your library
 you can publish your library into maven control. you can use official maven repository or jcenter, but
 it is complicated.
 in this project we use github as our maven repository.
