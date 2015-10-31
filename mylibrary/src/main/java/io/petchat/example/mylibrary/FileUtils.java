@@ -1,5 +1,7 @@
 package io.petchat.example.mylibrary;
 
+import android.os.Environment;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -16,6 +18,14 @@ public class FileUtils {
 
     // each line of the file is a json string
     public static JSONArray readSensorFile(final String filePath) {
+
+        /*
+        // for jayvee:
+        String FOLDER_SENSOR = Environment.getExternalStorageDirectory()
+                .getAbsolutePath() + "/senz_sensor_temp";
+        String filePath = FOLDER_SENSOR + "/sensor.<timestamp>.txt";
+        */
+
         try {
             FileReader fileReader = new FileReader(new File(filePath));
             BufferedReader br = new BufferedReader(fileReader);
