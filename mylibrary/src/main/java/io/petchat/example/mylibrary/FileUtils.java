@@ -21,6 +21,7 @@ public class FileUtils {
 
         /*
         // for jayvee:
+        // sensor files are located in senz_sensor_temp 
         String FOLDER_SENSOR = Environment.getExternalStorageDirectory()
                 .getAbsolutePath() + "/senz_sensor_temp";
         String filePath = FOLDER_SENSOR + "/sensor.<timestamp>.txt";
